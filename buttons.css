@@ -626,7 +626,7 @@ h5  {
   border: 2px solid #888;
   border-radius: 5px;
   max-width: 70%;
-  height: 70%;
+  height: 100%;
 }
 
  /* -------- The Skull Modal (background) */
@@ -670,7 +670,7 @@ h5  {
   border: 2px solid #888;
   border-radius: 5px;
   max-width: 70%;
-  height: 80%;
+  height: 100%;
 }
  /* -------- The Devil Modal (background) */
  .modalDevil {
@@ -713,7 +713,7 @@ h5  {
   border: 2px solid #888;
   border-radius: 5px;
   max-width: 70%;
-  height: 90%;
+  height: 100%;
 }
  /* -------- The Devil Modal (background) */
  .modalQuestion {
