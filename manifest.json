@@ -1,0 +1,11 @@
+{
+    "name": "UI Button Kit",
+    "short_name": "UI Button Kit",
+    "description": "One-page UI Button Kit for Developers",
+    "permissions": [
+        "clipboardWrite"
+      ]
+  }
+
+
+  
