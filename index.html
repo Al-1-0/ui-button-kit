@@ -2,6 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel=”manifest” href=”/manifest.json”>
     <link rel="stylesheet" href="buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -703,6 +704,14 @@
 <!-- =========================================================================== -->
 <!-- ------------------------ CLIPBOARD SCRIPTS -------------------------------- -->
 <!-- =========================================================================== -->
+
+<script>
+    navigator.permissions.query({name: "clipboard-write"}).then((result) => {
+  if (result.state === "granted" || result.state === "prompt") {
+    /* write to the clipboard now */
+  }
+});
+</script>
 
 <script>
 
