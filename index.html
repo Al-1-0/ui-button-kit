@@ -2,7 +2,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel=”manifest” href=”/manifest.json”>
     <link rel="stylesheet" href="buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -13,13 +12,16 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
-    <!-- <script src="modals.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <!--  CSS -->
+    <link href="primer.css" rel="stylesheet">
+    <link href="clipboard-main.css" rel="stylesheet">
 </head>
 <body class="body">
 <div class="page-container text-center">
     <nav>
         <ul class="nav justify-content-center">
-            <li><a href="https://al-1-0.github.io/ui-button-kit/"><iconify-icon icon="codicon:home" id="blue-hover"></iconify-icon></a></li>
+            <li><a href="#"><iconify-icon icon="codicon:home" id="blue-hover"></iconify-icon></a></li>
             <li><a href="#" id="skull"><iconify-icon icon="healthicons:death" id="pink-hover"></iconify-icon></a></li>
             <li><a href="#"><iconify-icon icon="mdi:emoticon-devil-outline" id="red-hover"></iconify-icon></a></li>
             <li><a href="#"><iconify-icon icon="eva:question-mark-circle-outline" id="yellow-hover"></iconify-icon></a></li>
@@ -30,7 +32,6 @@
         <h1 class="fw-bold pt-5 pb-4">
             SITE: UI BUTTON KIT
         </h1>
-        <p class="fw-bold text-center">FOR WEB + UI DEVELOPERS</p>
     </div>
 
 <!-- ================================================= SECTION 1 ================================= -->
@@ -66,7 +67,11 @@
                                             <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/></svg>Enter</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(42, 182, 102);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-1">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -90,7 +95,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-1">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -121,8 +130,11 @@
                                         </textarea>
                                     <!-- Trigger -->
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
-
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-2">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -146,7 +158,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-2">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +192,11 @@
                                             <iconify-icon class="icon" icon="bi:arrows-expand"></iconify-icon>Expand</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-3">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -201,8 +221,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
-                                </div>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-3">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>                                </div>
                             </div>
                         </div>
                     <!-- End of Modal 3 Content -->
@@ -242,8 +265,11 @@
                                             <iconify-icon class="icon" icon="fluent:select-all-off-20-regular"></iconify-icon>Select</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
-                                </div>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-4">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>                                </div>
                             </div>
                             <div class="col-sm-12 ">
                                 <div class=""><h5>CSS</h5>
@@ -267,7 +293,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-4">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -296,7 +326,11 @@
                                             <iconify-icon class="icon" icon="cib:node-js"></iconify-icon>Specify</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-5">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -321,7 +355,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-5">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +388,11 @@
                                             <iconify-icon class="icon" icon="eva:question-mark-circle-outline" id="yellow-hover"></iconify-icon>Query</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-6">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -375,7 +417,11 @@
                                         }
                                         </textarea>
                                      <!-- Clipboard Trigger -->
-                                     <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                     <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-6">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +462,11 @@
                                             <iconify-icon class="icon" icon="akar-icons:mobile-device"></iconify-icon>mobile</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-7">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -441,7 +491,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-7">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -469,7 +523,11 @@
                                             <iconify-icon class="icon" icon="icon-park-solid:reduce"></iconify-icon>Reduce</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-8">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -493,7 +551,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-8">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +583,11 @@
                                             <iconify-icon class="icon" icon="carbon:reflect-horizontal"></iconify-icon>Reflect</button>
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-html-9">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-sm-12 ">
@@ -546,7 +612,11 @@
                                         }
                                         </textarea>
                                     <!-- Clipboard Trigger -->
-                                    <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
+                                    <span class="input-group-button">
+                                        <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#btn-css-9">
+                                        <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                        </button>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -601,11 +671,6 @@
                                 <iconify-icon icon="healthicons:death"></iconify-icon>
                             </button></a>
                         </div>
-                        <div class="col-sm-12 text-center pt-5">
-                            <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" 
-                            data-slug="allanf" data-color="#363535" data-emoji="🍺"  data-font="Poppins" data-text="Buy me a beer" 
-                            data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-                        </div>
                     </div>
                 </div>
         </div>
@@ -654,8 +719,11 @@
                                 <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
                             </textarea>
                             <!-- Clipboard Trigger -->
-                            <button class="clippy" style="background:rgb(65, 189, 118);border:solid 2px #000; border-radius:2px;" onclick="copyToClipboard()"><img src="clippy.svg" height="25"></button>
-                            
+                            <span class="input-group-button">
+                                <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#js-copy">
+                                <img class="clippy" src="https://clipboardjs.com/assets/images/clippy.svg" width="13" alt="Copy to clipboard">
+                                </button>
+                            </span>                            
                         </p></div>
                     </div>
 
@@ -704,14 +772,6 @@
 <!-- =========================================================================== -->
 <!-- ------------------------ CLIPBOARD SCRIPTS -------------------------------- -->
 <!-- =========================================================================== -->
-
-<script>
-    navigator.permissions.query({name: "clipboard-write"}).then((result) => {
-  if (result.state === "granted" || result.state === "prompt") {
-    /* write to the clipboard now */
-  }
-});
-</script>
 
 <script>
 
@@ -1303,6 +1363,47 @@ function copyToClipboard() {
 // ==================== END OF MODALS ========================== -->
 // ============================================================= -->
 
+</script>
+<script>
+    // demos.js
+
+        var clipboardDemos = new Clipboard('[data-clipboard-demo]');
+
+        clipboardDemos.on('success', function(e) {
+            e.clearSelection();
+
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            showTooltip(e.trigger, 'Copied!');
+        });
+
+        clipboardDemos.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+
+            showTooltip(e.trigger, fallbackMessage(e.action));
+        });
+
+        // tooltips.js
+
+        var btns = document.querySelectorAll('.btn');
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('mouseleave', clearTooltip);
+            btns[i].addEventListener('blur', clearTooltip);
+        }
+
+        function clearTooltip(e) {
+            e.currentTarget.setAttribute('class', 'btn');
+            e.currentTarget.removeAttribute('aria-label');
+        }
+
+        function showTooltip(elem, msg) {
+            elem.setAttribute('class', 'btn tooltipped tooltipped-s');
+            elem.setAttribute('aria-label', msg);
+        }
 </script>
 
 </body>
