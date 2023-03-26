@@ -807,3 +807,31 @@ h5  {
   height: 100%;
   align-content: center;
 }
+
+/* ---------------------------------------- */
+/* Mobile Media Queries */
+/* ---------------------------------------- */
+
+@media only screen and (min-width: 320px) {
+
+  .page-container {
+    width:100vw;
+  }
+  button {
+    width: 50vw !important;
+    margin-bottom: 15px !important;
+  }
+  .container {
+    max-width: 320px;
+    display:flex;
+    justify-content:center;
+    padding:0;
+  }
+  .my-bar {
+    width: 80vw !important;
+    font-size: 80% !important; 
+  }
+  .clippy {
+    width: auto !important;
+  }
+}
