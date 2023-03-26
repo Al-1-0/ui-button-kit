@@ -832,6 +832,6 @@ h5  {
     font-size: 80% !important; 
   }
   .clippy {
-    width: auto !important;
+    width: 20px;
   }
 }
